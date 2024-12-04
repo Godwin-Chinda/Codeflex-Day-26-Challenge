@@ -1,76 +1,115 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f9;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
 }
 
 .container {
   width: 100%;
   max-width: 400px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #1836db;
 }
 
 .input-group {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  margin-bottom: 15px;
 }
 
 input[type="text"] {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1836db;
+  box-shadow: 0 0 5px rgba(24, 54, 219, 0.4);
 }
 
 button {
-  padding: 10px 15px;
+  padding: 12px 18px;
   background: #1836db;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.3s;
 }
 
 button:hover {
   background: #4c4cc5;
+  transform: translateY(-2px);
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #1836db;
+  border-radius: 8px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: #4c4cc5;
 }
 
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
   border-radius: 5px;
   margin-bottom: 10px;
-  background: #f9f9f9;
+  background: #fafafa;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #f0f0f8;
 }
 
 li button {
   background: #ea2b3e;
   font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 li button:hover {
   background: #72111b;
+  transform: scale(1.1);
 }
