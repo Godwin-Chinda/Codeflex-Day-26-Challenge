@@ -1,12 +1,33 @@
+/* Global styles */
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #1836db;
+  padding: 15px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.navbar .brand {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .container {
@@ -19,8 +40,8 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 28px;
+h2 {
+  font-size: 24px;
   margin-bottom: 20px;
   color: #1836db;
 }
@@ -112,4 +133,12 @@ li button {
 li button:hover {
   background: #72111b;
   transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  background: #1836db;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
 }
